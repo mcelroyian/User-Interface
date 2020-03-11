@@ -52,13 +52,14 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
+html, body, p {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Caveat', cursive;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+	font-family: 'Permanent Marker', cursive;
+	font-weight: bolder;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
@@ -66,19 +67,28 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 .container {
+
+}
+
+.header, .middle-img, .first, .second, .third, footer {
+	display: block;
 	width: 90%;
 	margin: 0 auto;
 }
 
 p {
+	font-size: 1.4em;
 	margin-bottom: 15px;
 }
 
 /* NAV STYLES */
 
 nav {
+	position: sticky;
+	top: 0px;
 	width: 100%;
-	margin: 3% auto;
+	background-color: lightslategray;
+	padding: 20px;
 }
 
 nav > * {
@@ -93,15 +103,12 @@ nav div {
 nav a {
 	margin: 3%;
 	text-decoration: none;
-	color: lightslategray;
+	color: white;
 	font-size: .9rem;
 	text-align: center;
 	padding: 1%;
 }
 
-nav a:first-child {
-	margin-left: 0;
-}
 
 nav img {
 	margin-left: 5%;
